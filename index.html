@@ -1,32 +1,115 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Personal Portfolio Website</title>
-    <link rel="stylesheet" type="text/css" href="./style.css">
+    <link rel="stylesheet" type="text/css" href="./style.css" />
 
-    <link rel="stylesheet"
-    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-
-</head>
-<body>
-
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!--Navigation Bar-->
     <header>
-        <div class="bx bx-menu" id="menu-icon"></div>
-        <ul class="navlist">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+      <div class="bx bx-menu" id="menu-icon"></div>
+      <ul class="navlist">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#aboutme">About</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
     </header>
 
-    <script type="text/javascript" src="js/script.js"></script>
+    <!--General Home Section-->
+    <section class="home" id="home">
+      <div class="home-text">
+        <h3>Hello, I'm</h3>
+        <h1>Kai Koyama-Wong</h1>
+        <h5>A Creative Designer <span>From Vancouver</span></h5>
+        <p>
+          Random description about what I am passionate about <b>and vibes</b>
+        </p>
 
-</body>
+        <div class="social">
+          <a href="#"><i class="bx bxl-facebook"></i></a>
+          <a href="#"><i class="bx bxl-twitter"></i></a>
+          <a href="https://www.linkedin.com/in/kaikoyamawong" target="_blank"
+            ><i class="bx bxl-linkedin"></i
+          ></a>
+        </div>
+        <a href="#" class="btn">About Me</a>
+      </div>
+
+      <div class="home-img">
+        <img src="images/Headshot.JPG" />
+      </div>
+    </section>
+
+    <!--About Me Section-->
+    <section class="aboutme" id="aboutme">
+      <div class="aboutme-text">
+        <h3>I am a developer</h3>
+        <h2>I love continously learning about new concepts and challenges</h2>
+        <p>
+          I am currently in my third-year as a business and computer science
+          combined degree student aspiring to become a software developer. Super
+          passionate about working with others and problem solving through
+          creative thinking. I am constantly seeking opportunities to develop
+          new skills, grow my interests, and meet new people. Always looking to
+          spread positivity and work with inspired individuals!
+        </p>
+      </div>
+    </section>
+
+    <!--Portfolio Section-->
+    <section class="portfolio" id="portfolio">
+      <div class="heading">
+        <h3>Portfolio</h3>
+        <h2>My projects and progress as a software developer</h2>
+        <p>Description of my projects</p>
+      </div>
+
+      <div class="portfolio-content">
+        <div class="col">
+          <img src="images/CourseTrackerImage.jpg" />
+          <div class="layer">
+            <h3>Course Tracker</h3>
+            <h5>Java Swing UI Application</h5>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Contact Section-->
+    <section class="contact" id="contact">
+      <div class="container">
+        <div class="centre">
+            <h3>Contact Me Here!</h3>
+        </div>
+
+        <div class="action">
+            <form>
+                <input type="email" name="email" placeholder="Enter Your Email" required>
+                <input type="submit" name="Submit" value="Submit">
+            </form>
+        </div>
+      </div>
+    </section>
+
+    <div class="endingNote">
+        <p>Made by Kai Koyama-Wong © 2023</p>
+    </div>
+
+    <script type="text/javascript" src="js/script.js"></script>
+  </body>
 </html>
