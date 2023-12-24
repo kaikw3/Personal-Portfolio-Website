@@ -2,7 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Jost", sans-serif;
+  font-family: "Lucida Sans", sans-serif;
   list-style: none;
   text-decoration: none;
   scroll-behavior: smooth;
@@ -27,19 +27,20 @@ header {
   top: 0;
   right: 0;
   z-index: 1000;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   background: white;
-  padding: 30px 18%;
+  padding: 20px 18%;
   transition: 0.3s;
   border-bottom: solid;
   }
 .navlist {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 .navlist li {
   position: relative;
+  margin: 7px;
 }
 .navlist a {
   font-size: var(--p-font);
@@ -69,50 +70,41 @@ header {
 }
 
 section {
-  padding: 100px 18%;
+  padding: 100px;
 }
 .home {
   padding-top: 125px;
   min-width: 100vh;
   height: 100%;
   width: 100%;
-  /*background: var(--second-color); */
-  background-size: cover;
-  background-position: center;
+  background: #eeefea;
   position: relative;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;
   align-items: center;
-  grid-gap: 4rem;
+  justify-content: center;
 }
 .home-text h1 {
   margin: 10px -4px 20px;
-  font-size: var(--big-font);
+  font-size: 80px;
   line-height: 1;
   font-weight: 500;
+  flex-wrap: wrap;
+  padding-bottom: 10px;
 }
+
 .home-text h5 {
   margin-bottom: 23px;
-  font-size: 19px;
-  font-weight: 500;
-}
-span {
-  color: lightblue;
-}
-.home-text h3 {
-  color: lightblue;
   font-size: 20px;
   font-weight: 500;
+  padding-bottom: 10px;
+  color: #899499
 }
-.home-text p {
-  font-size: var(--p-font);
-  color: var(--second-color);
-  line-height: 28px;
-  margin-bottom: 20px;
+.home-text{
+  padding-right: 5%;
 }
-.social a {
-  width: 35px;
-  height: 35px;
+/* .social a {
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
   display: inline-flex;
   align-items: center;
@@ -122,12 +114,24 @@ span {
   color: var(--main-color);
   margin-right: 22px;
   margin-bottom: 30px;
+} */
+
+
+.social box-icon{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 22px;
+  margin-bottom: 30px;
+  transition: 0.4s;
 }
-.social a:hover {
-  transform: scale(1.1);
-  background: var(--second-color);
-  transition: 0.3s;
+.social box-icon:hover {
+  transform: scale(1.2);
+  transition: 0.4s;
+  opacity: .7;
+  cursor: pointer;
 }
+
 .btn {
   display: inline-block;
   color: var(--bg-color);
@@ -145,9 +149,10 @@ span {
   background-color: lightblue;
 }
 .home-img img {
-  max-width: 150%;
-  width: 540px;
+  max-width: 200%;
+  width: 680px;
   height: auto;
+  padding-left: 6%;
 }
 .aboutme {
   display: grid;
@@ -247,7 +252,6 @@ span {
   width: 100%;
   font-size: 15px;
   font-weight: 500;
-  color: var(--bg-color);
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
