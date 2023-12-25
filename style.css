@@ -73,7 +73,7 @@ section {
   padding: 100px;
 }
 .home {
-  padding-top: 125px;
+  padding-top: 175px;
   min-width: 100vh;
   height: 100%;
   width: 100%;
@@ -141,16 +141,27 @@ section {
   margin-left: 6%;
 }
 .aboutme {
-  display: grid;
+  padding-top: 125px;
+  min-width: 100vh;
+  height: 100%;
+  width: 100%;
+  background: #F9FFFA;
+  position: relative;
+  display: flex;
   align-items: center;
   justify-content: center;
 }
-.aboutme-text h2 {
-  font-size: var(--h2-font);
-  font-weight: 500;
-  margin: 8px 0px 25px;
-  line-height: 1.1;
-  max-width: 1000px;
+.about-img img{
+  max-width: 100%;
+  width: 350px;
+  height: auto;
+  border-radius: 50px;
+  margin-right: 5%;
+}
+.aboutme-text {
+  align-items: center;
+  justify-content: center;
+  margin-left: 6%;
 }
 .aboutme-text h5 {
   color: var(--main-color);
@@ -159,9 +170,10 @@ section {
 }
 .aboutme-text p {
   max-width: 1000px;
-  font-size: var(--p-font);
+  font-size: 20px;
   line-height: 28px;
   margin-bottom: 45px;
+  margin-top: 20px;
 }
 
 .heading {
