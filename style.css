@@ -7,7 +7,6 @@
   text-decoration: none;
   scroll-behavior: smooth;
 }
-
 :root {
   --bg-color: #ffffff;
   --text-color: #000;
@@ -20,6 +19,8 @@
 body {
   background: var(--bg-color);
   color: var(--text-color);
+  background: #F9FFFA;
+
 }
 header {
   position: fixed;
@@ -31,7 +32,7 @@ header {
   padding: 27px 20%;
   transition: 0.3s;
   border-bottom: solid;
-  }
+}
 .navlist {
   display: flex;
   justify-content: center;
@@ -68,7 +69,6 @@ header {
   cursor: pointer;
   display: none;
 }
-
 section {
   padding: 100px;
 }
@@ -164,7 +164,6 @@ section {
   margin-left: 6%;
 }
 .aboutme-text h5 {
-  color: var(--main-color);
   font-size: 75px;
   font-weight: 500;
 }
@@ -284,6 +283,8 @@ section {
     line-height: 26px;
     margin-bottom: 25px;
 }
+
+
 .contact .action form input[type="email"] {
     max-width: 100%;
     width: 470px;
@@ -313,3 +314,49 @@ section {
     font-size: var(--p-font);
     letter-spacing: 1px;
 }
+.projects{
+  margin-top: 15px;
+  min-width: 100vh;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+
+}
+.headingPort{
+  display: flex;
+  align-items:flex-start;
+  font-size: 35px;
+  font-weight: 350;
+  margin-left: 100;
+  margin-bottom: 25px;
+}
+#projects-container {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  border-top: 3px solid #000;
+  min-height: 20%;
+
+}
+.projects-sidebar {
+  background-color: #f8f8f8;
+  border-right: 3px solid #000;
+  height: 80vh;
+  overflow: auto;
+}
+.project-link {
+  padding: 25px;
+  border-bottom: 3px solid #000;
+  cursor: pointer;
+  background-color: #f9f9f9;
+}
+.project-link:hover {
+  background-color: lightpink;
+  border-left: 5px solid gold;
+}
+.project-description {
+  padding: 20px;
+}
+
+
+
