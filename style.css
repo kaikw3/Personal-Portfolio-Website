@@ -341,8 +341,12 @@ section {
 .projects-sidebar {
   background-color: #f8f8f8;
   border-right: 3px solid #000;
-  height: 80vh;
+  height: 70vh;
   overflow: auto;
+}
+.project-link.active {
+  background-color: #f0f0f0;
+  border-left: 5px solid lightgreen; /* Active item marker */
 }
 .project-link {
   padding: 25px;
@@ -351,12 +355,27 @@ section {
   background-color: #f9f9f9;
 }
 .project-link:hover {
-  background-color: lightpink;
-  border-left: 5px solid gold;
+  background-color: lightgreen;
 }
 .project-description {
-  padding: 20px;
+  padding: 30px;
+  display: none;
+  align-items: center;
 }
+.project-description h2{
+  margin-bottom: 25px;
+  font-size: 45px;
+}
+.project-description p{
+  font-size: 25px;
+  font-weight: 50;
+}
+.all-descriptions{
+  display: flex;
+  align-items: flex-start;
+}
+
+
 
 
 

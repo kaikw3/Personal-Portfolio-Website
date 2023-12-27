@@ -7,6 +7,7 @@
     <link rel="stylesheet" type="text/css" href="./style.css" />
 
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script src="script.js"></script>
 
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -82,19 +83,40 @@
       <div class="headingPort">
         <h2>My Projects</h2>
       </div>
-    <div id="projects-container">
-      <div class="projects-sidebar">
-        <div class="project-link">Weave</div>
-        <div class="project-link">JointPal.Ai</div>
-        <div class="project-link">RateMyFlix</div>
-        <div class="project-link">Course Trackify</div>
+      <div id="projects-container">
+        <div class="projects-sidebar">
+          <div class="project-link active" onclick="opentab('Weave')">Weave</div>
+          <div class="project-link" onclick="opentab('JointPal')">JointPal.Ai</div>
+          <div class="project-link" onclick="opentab('RateMyFlix')">RateMyFlix</div>
+          <div class="project-link" onclick="opentab('CourseTrackify')">Course Trackify</div>
+        </div>
+    
+        <div class="all-descriptions">
+        <div class="project-description" id="description-Weave">
+          <h2>Weave</h2>
+          <p>6 other university studends and I started this organization called Weave.
+            Many of us were unhappy with the current landscape of scheudling applications
+            and decided to develop an application ourselves. With a Ux/UI team, product team,
+            as well as the developer team which I am one, we have undergone over 7 months of planning,
+            designing, building, and adjusting. While we have yet to release our first release,
+            we are approaching this date and are all eager to show case what we created. As to the 
+            tech stack we have been using, we have tried to incorparate modern technologies as well as
+            trying to ensure we uphold industry best practices.
+          </p>
+        </div>
+        <div class="project-description" id="description-JointPal">
+          <h2>JointPal.Ai</h2>
+          <p>Select a project to see the description Weave.</p>        </div>
+        <div class="project-description" id="description-RateMyFlix">
+          <h2>RateMyFlix</h2>
+          <p>Select a project to see the description Weave.</p>        </div>
+        <div class="project-description" id="description-CourseTrackify">
+          <h2>CourseTrackify</h2>
+          <p>Select a project to see the description Weave.</p>        </div>
       </div>
-      
-      <div class="project-description">
-        <p>Select a project to see the description.</p>
       </div>
-    </div>
-  </section>
+    </section>
+    
 
 
     <!--Contact Section-->
