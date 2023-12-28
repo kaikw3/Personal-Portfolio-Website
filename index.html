@@ -8,6 +8,7 @@
 
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
     <script src="script.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -36,29 +37,28 @@
         <h5>Hi I'm Kai, a third year Business and Computer Science student.</h5>
 
         <div class="social">
-          <a href="https://www.linkedin.com/in/kaikoyamawong" target="_blank"></li><box-icon name='linkedin-square' type='logo' size="lg" color="#0077b5" animation="tada-hover"></box-icon></a>
-          <a href="https://github.com/kaikw3" target="_blank"><box-icon type='logo' name='github' size="lg" animation="tada-hover"></box-icon></a>
+          <i id="linkedin" class='bx bxl-linkedin-square bx-tada-hover co'></i>
+          <i id="github" class='bx bxl-github bx-tada-hover'></i>
         </div>
-
-          <div class="techStack">
-          <h3>Tech Stack | </h1>
-            <img src="https://skillicons.dev/icons?i=html" alt="skill-icon">
-            <img src="https://skillicons.dev/icons?i=css" alt="skill-icon">        
-            <img src="https://skillicons.dev/icons?i=java" alt="skill-icon">       
-            <img src="https://skillicons.dev/icons?i=js" alt="skill-icon">       
-            <img src="https://skillicons.dev/icons?i=react" alt="skill-icon">        
-            <img src="https://skillicons.dev/icons?i=c" alt="skill-icon">      
-            <img src="https://skillicons.dev/icons?i=cpp" alt="skill-icon">        
-            <img src="https://skillicons.dev/icons?i=typescript" alt="skill-icon">       
-            <img src="https://skillicons.dev/icons?i=python" alt="skill-icon">        
-
-          </div>
       </div>
 
       <div class="home-img">
         <img src="images/Headshot.JPG" />
       </div>
     </section>
+
+    <div class="techStack">
+      <h3>Tech Stack |</h3>
+      <img src="https://skillicons.dev/icons?i=html" alt="skill-icon" />
+      <img src="https://skillicons.dev/icons?i=css" alt="skill-icon" />
+      <img src="https://skillicons.dev/icons?i=java" alt="skill-icon" />
+      <img src="https://skillicons.dev/icons?i=js" alt="skill-icon" />
+      <img src="https://skillicons.dev/icons?i=react" alt="skill-icon" />
+      <img src="https://skillicons.dev/icons?i=c" alt="skill-icon" />
+      <img src="https://skillicons.dev/icons?i=cpp" alt="skill-icon" />
+      <img src="https://skillicons.dev/icons?i=typescript" alt="skill-icon" />
+      <img src="https://skillicons.dev/icons?i=python" alt="skill-icon" />
+    </div>
 
     <!--About Me Section-->
     <section class="aboutme" id="aboutme">
@@ -70,11 +70,12 @@
         <h5>About Me</h5>
         <p>
           I am currently in my third-year as a Business and Computer Science
-          combined degree student interested in software development, product management
-           and all things tech! Super passionate about working with others and problem solving through
-          creative thinking. I am constantly seeking opportunities to develop
-          new skills, grow my interests, and meet new people. Always looking to
-          spread positivity and work with inspired individuals!
+          combined degree student interested in software development, product
+          management and all things tech! Super passionate about working with
+          others and problem solving through creative thinking. I am constantly
+          seeking opportunities to develop new skills, grow my interests, and
+          meet new people. Always looking to spread positivity and work with
+          inspired individuals!
         </p>
       </div>
     </section>
@@ -85,91 +86,148 @@
       </div>
       <div id="projects-container">
         <div class="projects-sidebar">
-          <div class="project-link active" onclick="opentab('Weave')">Weave</div>
-          <div class="project-link" onclick="opentab('JointPal')">JointPal.Ai</div>
-          <div class="project-link" onclick="opentab('RateMyFlix')">RateMyFlix</div>
-          <div class="project-link" onclick="opentab('Course')">Course Trackify</div>
+          <div class="project-link active" onclick="opentab('Weave')">
+            Weave
+          </div>
+          <div class="project-link" onclick="opentab('JointPal')">
+            JointPal.Ai
+          </div>
+          <div class="project-link" onclick="opentab('RateMyFlix')">
+            RateMyFlix
+          </div>
+          <div class="project-link" onclick="opentab('Course')">
+            Course Trackify
+          </div>
         </div>
-    
+
         <div class="all-descriptions">
-        <div class="project-description" id="description-Weave">
-          <h2>Weave</h2>
-          <p>6 other university studends and I started this organization called Weave.
-            Many of us were unhappy with the current landscape of scheudling applications
-            and decided to develop an application ourselves. With a Ux/UI team, product team,
-            as well as the developer team which I am one, we have undergone over 7 months of planning,
-            designing, building, and adjusting. While we have yet to release our first release,
-            we are approaching this date and are all eager to show case what we created. As to the 
-            tech stack we have been using, we have tried to incorparate modern technologies as well as
-            trying to ensure we uphold industry best practices.
-          </p>
-          <img src="./Images/placeholder.jpg">
+          <div class="project-description" id="description-Weave">
+            <h2>Weave</h2>
+            <div class="project-content">
+              <p>
+                6 other university studends and I started this organization
+                called Weave. Many of us were unhappy with the current landscape
+                of scheudling applications and decided to develop an application
+                ourselves. With a Ux/UI team, product team, as well as the
+                developer team which I am one, we have undergone over 7 months
+                of planning, designing, building, and adjusting. While we have
+                yet to release our first release, we are approaching this date
+                and are all eager to show case what we created. As to the tech
+                stack we have been using, we have tried to incorparate modern
+                technologies as well as trying to ensure we uphold industry best
+                practices.
+              </p>
+              <img src="./Images/placeholder.jpg" />
+            </div>
+            <div class="project-tech-stack">
+              <span class="tech">TypeScript</span>
+              <span class="tech">NextJS</span>
+              <span class="tech">TailWind CSS</span>
+              <span class="tech">React</span>
+              <span class="tech">RTK Query</span>
+            </div>
+          </div>
+
+          <div class="project-description" id="description-JointPal">
+            <h2>JointPal.Ai</h2>
+            <div class="project-content">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem
+                ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum
+                dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor
+                sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit
+                amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet,
+                consectetur adipiscing elit. Lorem ipsum dolor sit amet,
+                consectetur adipiscing elit. Lorem ipsum dolor sit amet,
+                consectetur adipiscing elit. Lorem ipsum dolor sit amet,
+                consectetur adipiscing elit. Lorem ipsum dolor sit amet,
+                consectetur adipiscing elit."
+              </p>
+              <img src="./Images/placeholder.jpg" />
+            </div>
+            <div class="project-tech-stack">
+              <span class="tech">JavaScript</span>
+              <span class="tech">React</span>
+              <span class="tech">CSS</span>
+              <span class="tech">Axios HTTP</span>
+              <span class="tech">Node.js</span>
+              <span class="tech">OpenAi API</span>
+            </div>
+          </div>
+
+          <div class="project-description" id="description-RateMyFlix">
+            <h2>RateMyFlix</h2>
+            <div class="project-content">
+              <p>
+                6 other university studends and I started this organization
+                called Weave. Many of us were unhappy with the current landscape
+                of scheudling applications and decided to develop an application
+                ourselves. With a Ux/UI team, product team, as well as the.
+              </p>
+              <img src="./Images/placeholder.jpg" />
+            </div>
+            <div class="project-tech-stack">
+              <span class="tech">JavaScript</span>
+              <span class="tech">React</span>
+              <span class="tech">CSS</span>
+            </div>
+          </div>
+
+          <div class="project-description" id="description-Course">
+            <h2>Course Trackify</h2>
+            <div class="project-content">
+              <p>
+                6 other university studends and I started this organization
+                called Weave. Many of us were unhappy with the current landscape
+                of scheudling applications and decided to develop an application
+                ourselves. With a Ux/UI team, product team, as well as the
+                developer team which I am one, we have undergone over 7 months
+                of planning, designing, building, and adjusting. While we have
+                yet to release our first release, we are.
+              </p>
+              <img src="./Images/placeholder.jpg" />
+            </div>
+            <div class="project-tech-stack">
+              <span class="tech">Java</span>
+              <span class="tech">Java Swing</span>
+              <span class="tech">JUnit 5</span>
+              <span class="tech">JSON</span>
+            </div>
+          </div>
         </div>
-        <div class="project-description" id="description-JointPal">
-          <h2>JointPal.Ai</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, 
-            consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur
-             adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, 
-             consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum 
-             dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-          </p>
-          <img src="./Images/placeholder.jpg">       
-        </div>
-
-        <div class="project-description" id="description-RateMyFlix">
-          <h2>RateMyFlix</h2>
-          <p>6 other university studends and I started this organization called Weave.
-            Many of us were unhappy with the current landscape of scheudling applications
-            and decided to develop an application ourselves. With a Ux/UI team, product team,
-            as well as the.
-          </p>
-          <img src="./Images/placeholder.jpg">        </div>
-
-        <div class="project-description" id="description-Course">
-          <h2>Course_Trackify</h2>
-          <p>6 other university studends and I started this organization called Weave.
-            Many of us were unhappy with the current landscape of scheudling applications
-            and decided to develop an application ourselves. With a Ux/UI team, product team,
-            as well as the developer team which I am one, we have undergone over 7 months of planning,
-            designing, building, and adjusting. While we have yet to release our first release,
-            we are.
-          </p>
-          <img src="./Images/placeholder.jpg">        </div>
-
-      </div>
       </div>
     </section>
-    
-
 
     <!--Contact Section-->
     <section class="contact" id="contact">
       <div class="container">
         <div class="centre">
-            <h3>Contact Me Here!</h3>
+          <h3>Contact Me Here!</h3>
         </div>
 
         <div class="action">
-            <form>
-                <input type="email" name="email" placeholder="Enter Your Email" required>
-                <input type="submit" name="Submit" value="Submit">
-            </form>
+          <form>
+            <input
+              type="email"
+              name="email"
+              placeholder="Enter Your Email"
+              required
+            />
+            <input type="submit" name="Submit" value="Submit" />
+          </form>
         </div>
       </div>
     </section>
 
     <div class="endingNote">
-        <p>Made by Kai Koyama-Wong © 2023</p>
+      <p>Made by Kai Koyama-Wong © 2023</p>
     </div>
 
     <script type="text/javascript" src="js/script.js"></script>
   </body>
 </html>
 
-
-
-        <!-- Portfolio Section
+<!-- Portfolio Section
         <section class="portfolio" id="portfolio">
           <div class="headingPort">
             <h2>My Projects</h2>
@@ -186,7 +244,7 @@
           </div>
         </section> -->
 
-    <!-- Portfolio Section
+<!-- Portfolio Section
     <section class="portfolio" id="portfolio">
       <div class="heading">
         <h3>Portfolio</h3>
