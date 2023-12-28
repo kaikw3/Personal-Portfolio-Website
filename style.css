@@ -69,12 +69,13 @@ header {
   cursor: pointer;
   display: none;
 }
-section {
-  padding: 100px;
+.home-square {
+  width: 1px;
+  height: 20vh; 
+  border: none;
 }
 .home {
   display: flex;
-  margin-top: 10vh;
   min-width: 100vh;
   height: 100%;
   width: 100%;
@@ -118,31 +119,18 @@ section {
 #linkedin{
   color: #0077b5;
 }
-.techStack {
-  display: inline-flex;
-  margin-top: 150px;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  top: 0;
-}
-.techStack img {
-  margin-left: 20px;
-  transition: ease 0.2s;
-}
-.techStack img:hover {
-  margin-top: -25px;
-  cursor: pointer;
-  transition: ease 0.2s;
-}
 .home-img img {
   max-width: 200%;
   width: 30vw;
   height: auto;
   border-radius: 100px;
 }
+.about-square {
+  width: 1px;
+  height: 22.2vh; 
+  border: none;
+}
 .aboutme {
-  padding-top: 125px;
   min-width: 100vh;
   height: 100%;
   width: 100%;
@@ -151,10 +139,12 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
+  margin-bottom: 10vh;
 }
 .about-img img {
   max-width: 100%;
-  width: 350px;
+  width: 20vw;
   height: auto;
   border-radius: 50px;
   margin-right: 5%;
@@ -165,17 +155,33 @@ section {
   margin-left: 6%;
 }
 .aboutme-text h5 {
-  font-size: 75px;
+  font-size: 3.2vw;
   font-weight: 500;
 }
 .aboutme-text p {
-  max-width: 1000px;
-  font-size: 20px;
-  line-height: 28px;
-  margin-bottom: 45px;
+  max-width: 55vw;
+  font-size: 1.1vw;
+  line-height: 4vh;
   margin-top: 20px;
 }
-
+.about-top-section{
+  display: inline-flex;
+}
+.techStack {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 19vw;
+}
+.techStack img {
+  margin-left: 20px;
+  transition: ease 0.2s;
+}
+.techStack img:hover {
+  margin-top: -25px;
+  cursor: pointer;
+  transition: ease 0.2s;
+}
 .heading {
   text-align: center;
 }
@@ -316,11 +322,16 @@ section {
   font-size: var(--p-font);
   letter-spacing: 1px;
 }
+.projects-square {
+  width: 1px;
+  height: 15vh; 
+  border: none;
+}
 .projects {
-  margin-top: 15px;
   align-items: center;
   justify-content: center;
-  margin: 100px;
+  margin-right: 8vw;
+  margin-left: 8vw;
   font-size: .8vw;
 }
 .headingPort {
